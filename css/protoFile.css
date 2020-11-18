@@ -1,0 +1,352 @@
+/*******-mohammed gamal mohammed / Cairo********/
+
+/***Start styling Elements***/
+body{overflow: hidden;}
+p{font-family: 'PT Sans Narrow', sans-serif;}
+/**** Start First section ****/
+#first{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 90px;
+}
+#first a{text-decoration: none; cursor: pointer;}
+#first #conection{
+    background-color: #00000078;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    z-index: 1;
+}
+#first #conection i{
+    display: block;
+    font-size: 37px;
+    color: #9c9e9f;
+    padding: 14px 0 14px 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#first #conection i span{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin-left: 26px;
+    background-color: white;
+    color: #000;
+    font-size: 20px;
+    padding: 7px;
+    display: none;
+}
+#first #conection i span::before{
+    content: '';
+    border: 9px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: -6px;
+    top: 5px;
+    z-index: -1;
+}
+#first .row{
+    margin: 0;
+    padding: 0;
+}
+#first > i{
+    position: absolute;
+    bottom: 6px;
+    right: 11px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    background-color: #f0ffff21;
+    padding: 17px;
+    border-radius: 50%;
+    color: #646464;
+    animation: move 1s ease-in-out infinite;
+    cursor: pointer;
+    margin-bottom: 26px;
+}
+@keyframes move{
+    0%,100%{
+        bottom: 6px;
+        right: 11px;
+    }
+    50%{
+        bottom: 20px;
+    }
+}
+@media (max-width:1270px){
+    #first #conection{
+        width: 100%;
+        height: 60px;
+        text-align: center;
+    }
+    #first #conection i{
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 10px;
+
+    }
+    #first #conection i span{
+        top: 63px;
+        margin-left: -44px;
+    }
+    #first #conection i span::before{
+        left: 38%;
+        top: -6px;
+    }
+}
+#first-text{
+    position: relative;
+    text-align: center;
+}
+#first-text h1{
+    font-size: 98px;
+    text-align: center;
+    margin: 85px auto 66px;
+    color: azure;
+}
+#first-text p{
+    text-align: left;
+    line-height: 49px;
+    font-size: 25px;
+    color: #2a90a7cf;
+}
+/**** End First section ****/
+/**** Start evluation section ****/
+
+
+#Skills{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 90px;
+    text-align: center;
+}
+#Skills h2,#workes h2{
+    text-align: center;
+    font-size: 80px;
+    color: azure;
+    padding: 60px 0 20px;
+    margin-top: 0;
+    letter-spacing: 5px;
+}
+#Skills h2 span{color: #d15252;background-color: aliceblue;}
+#Skills p,#workes p{
+    font-size: 21px;
+    text-align: center;
+    color: #90938e;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+#Skills progress{
+    width: 80%;
+    height: 40px;
+    border-radius: 0;
+    display: block;
+    margin-left: 10px;
+}
+#Skills label{
+    display: block;
+    font-size: 24px;
+    margin-left: 30px;
+    color: azure;
+    text-align: left;
+}
+/**** End evluation section ****/
+
+/**** start workes section ****/
+#workes{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 90px;
+    text-align: center;
+}
+#workes h2{
+    letter-spacing: 1px;
+    word-spacing: -3px;
+    text-transform: capitalize;
+}
+#workes video{
+    max-width: 480px;
+    max-height: 340px;
+    opacity: .4;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#workes video:hover,#workes video:focus{opacity: 1;outline: 0;}
+
+/**** End workes section ****/
+
+
+/**** Start About section ****/
+#about{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+}
+#about #about-text{
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    margin-left: 40px;
+    color: azure;
+}
+#about #about-text h2{
+    font-size: 92px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#about #about-text #content{
+    line-height: 65px;
+}
+#about #about-text #content img{
+    width: 480px;
+    height: 488px;
+    float: left;
+    padding-right: 24px;
+}
+@media(max-width:900px){
+    #about #about-text #content img{float: none;margin-left: auto; margin-right: auto;}
+}
+#about #about-text #content ul span{
+    font-size: 23px;
+    padding: 6px;
+}
+#about #about-text #content ul li i{
+    color: #0059ffa2;
+}
+
+#about #about-text #content a{
+    padding: 12px;
+    max-width: 200px;
+    background-color: #d15252;
+    color: #fff;
+    line-height: 1;
+    font-size: 23px;
+    display: inline-block;
+    text-decoration: none;
+}
+#about #about-text #content a:hover{
+    text-decoration: none;
+    background-color: #d15d5d;
+}
+/**** End About section ****/
+
+
+/**** Start footer ****/
+footer{
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    text-align: center;
+    background-color: #222;
+    padding: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    margin: 0;
+    background-color: #ddd;
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+}
+/**** End footer ****/
+
+
+/**Start looding**/
+.looding{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index:3;
+    background-color: #1f1d1d;
+    transition: all 1s ease-in-out !important;
+}
+
+.sk-cube-grid {
+  width: 80px;
+  height: 80px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color:#fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+ animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  } 
+}
+
+/****End looding****/
